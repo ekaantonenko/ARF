@@ -58,7 +58,7 @@ class Imputation(BaseEstimator):
     TBD
     """
     
-    def __init__(self, estimator, *, method='iterative', window_size=10, initial_imputation='random', n_ensemble=1,
+    def __init__(self, estimator, *, method='iterative', window_size='all', initial_imputation='random', n_ensemble=1,
         direction='left_right', n_iter=10, na=-1, return_time=False, dim=None):
         self.method = method
         self.delta = window_size
